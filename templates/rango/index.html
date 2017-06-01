@@ -1,0 +1,39 @@
+<!--{% load staticfiles %} <!-- New line -->
+<!--<html>
+<head>
+<title>Rango</title>
+</head>
+<body>
+<h1>Rango says...</h1>
+<div>
+hey there partner! <br />
+www.tangowithdjango.com
+Templates and Media Files 37
+<strong>{{ boldmessage }}</strong><br />
+</div>
+<div>
+<a href="/rango/about/">About</a><br />
+<img src="{% static "images/Abhi.jpg" %}"
+alt="Picture of Rango" /> <!-- New line -->
+<!--</div>
+</body>
+</html>-->
+<!--{% load staticfiles %} <!-- New line -->
+<!--<html> <head> <title>Rango</title> </head>
+<body> <h1>Rango says...</h1>
+<div> hey there partner! <br />
+  <strong>{{ boldmessage }}</strong><br /> </div>
+  <div> <a href="/rango/about/">About</a><br /> <img src="{% static "images/Abhi.jpg" %}" alt="Picture of Rango" /> <!-- New line --> </div> </body>
+  <!--</html>-->
+  <!DOCTYPE html> {% load staticfiles %}
+<html>
+<head> <title>Rango</title> <!-- CSS -->
+  <link rel="stylesheet" href="{% static "css/base.css" %}" />
+  <!-- JavaScript -->
+  <script src="{% static "js/jquery.js" %}"></script>
+</head>
+<body> <!-- Image --> <img src="{% static "images/Abhi.jpg" %}" alt="Picture of Abhi" />
+ <img src="{{ MEDIA_URL}}uma.jpg"/>
+ </body>
+
+</html>
